@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* TOP */
+#top{
+    height: calc( 100vh - 75px );
+    width: 100%;
+    background-color: red;
+}
+
+#sidebar{
+    width: 50px;
+    height: 100%;
+    background-color: #000;
+}
+
+#main-content{
+    width: calc(100% - 50px);
+    height: 100%;
+    background-color: #141922;
+}
+/* BOTTOM */
+
+#bottom{
+    height: 75px;
+    width: 100%;
+    background-color: #282828;
+}
+
+/* POSITIONING AND FLEXING */
+
+.d-flex{
+    display: flex;
+}

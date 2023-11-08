@@ -14,24 +14,28 @@
     width: 100%;
 }
 
+.content{
+    width: 100%;
+}
+
     /* COLUMN */
 
     .col-h-80{
         width: 100%;
-        height: calc(80vh - 75px);
+        height: calc(90vh - 75px);
         border: red dashed 1px;  
     }
 
     .col-h-20{
         width: 100%;
-        height: calc(20vh); 
+        height: calc(10vh); 
         border: red dashed 1px;   
     }
 
     .col-25{
         width: 25%;
         border: red dashed 1px;
-        height: 25px;
+        text-align: center;
     }
 
     .col-33{
@@ -43,7 +47,6 @@
     .col-50{
         width: calc(50% - 20px);
         border: red dashed 1px;
-        height: 200px;
         margin: 10px;
     }
 
@@ -76,7 +79,7 @@
         line-height: 2rem
     }
 
-    .menu img{
+    .menu img , .col-h-20 li {
         width: 25px;
     }
     
@@ -95,6 +98,8 @@
         list-style-type: none;
         padding: 0;
         line-height: 2rem;
+        
+        
     }
 
     .add-playlist{
@@ -112,6 +117,10 @@
         overflow-y: auto;
     }
 
+    #main-content img{
+        width: 100%;
+    }
+
 
 
     /* HEADER */
@@ -119,7 +128,7 @@
     header{
         width: calc(100% - 50px);
         height: 75px;
-        background-color: #080b12;
+        background-color: #080b1294;
         position: fixed;
         z-index: 1;
     }

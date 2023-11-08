@@ -41,15 +41,18 @@
     }
 
     .col-50{
-        width: 50%;
+        width: calc(50% - 20px);
         border: red dashed 1px;
         height: 200px;
+        margin: 10px;
     }
 
     .col-100{
         width: 100%;
-        border: red dashed 1px;
-        height: 75px;
+    }
+
+    .display{
+        display: none;
     }
 
 
@@ -60,19 +63,54 @@
     width: 100%;
     background-color: red;
 }
+    /* SIDEBAR */
 
-#sidebar{
-    width: 50px;
-    height: 100%;
-    background-color: #000;   
-}
+    #sidebar{
+        width: 50px;
+        height: 100%;
+        background-color: #000;   
+    }
 
-#main-content{
-    width: calc(100% - 50px);
-    height: 100%;
-    background-color: #141922;
-    overflow-y: auto;
-}
+    .menu{
+        margin: 20px 0;
+        line-height: 2rem
+    }
+
+    .menu img{
+        width: 25px;
+    }
+    
+    .logo{
+        font-size: 1.5rem;
+    }
+    .fa-plus{
+        background: #fff;
+        padding: 5px 10px;
+        color: #000;
+        font-size: 30px;
+        
+    }
+
+    ul{
+        list-style-type: none;
+        padding: 0;
+        line-height: 2rem;
+    }
+
+    .add-playlist{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+
+
+    /* MAIN CONTENT */
+    #main-content{
+        width: calc(100% - 50px);
+        height: 100%;
+        background-color: #141922;
+        overflow-y: auto;
+    }
 
 
 
@@ -131,6 +169,10 @@
     text-align: end;
 }
 
+.ta-center{
+    text-align: center;
+}
+
 /* FONT MODELLING */
 
 .fc-white{
@@ -165,6 +207,16 @@
     #sidebar{
         width: 175px;
     }
+
+    .display{
+        display: inline-block;
+    }
+
+    #sidebar .ta-center {
+        text-align: start;
+    }
+
+
     
 }
 
@@ -176,7 +228,7 @@
     }
 
     .col-50{
-        width: 25%;
+        width: calc(25% - 20px); 
     }
 
     footer .col-33:first-child , .col-33:last-child{
@@ -189,3 +241,4 @@
     
     
 }
+

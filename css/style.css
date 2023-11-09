@@ -5,6 +5,9 @@
 }
 
 /* COMMON */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 
 .container{
     width: 100%;
@@ -30,14 +33,14 @@ h2{
 
     .col-h-80{
         width: 100%;
-        height: calc(90vh - 75px);
-          
+        height: calc(85vh - 75px);
+        overflow-y: hidden;
     }
 
     .col-h-20{
         width: 100%;
-        height: calc(10vh); 
-           
+        padding-right: 10px; 
+        
     }
 
     .col-25{
@@ -87,7 +90,7 @@ h2{
     #sidebar{
         width: 50px;
         height: 100%;
-        background-color: #000;   
+        background-color: #000;  
     }
 
     .menu{
@@ -95,15 +98,17 @@ h2{
         line-height: 2rem
     }
 
-    .menu img , .col-h-20 li {
+    .menu img , .col-h-20 li , .logo img{
         width: 25px;
     }
+
+    
     
     .logo{
         font-size: 1.5rem;
     }
     .fa-plus{
-        background: #fff;
+        background: grey;
         padding: 5px 10px;
         color: #000;
         font-size: 30px;
@@ -116,10 +121,37 @@ h2{
         line-height: 2rem;
     }
 
+    .playlist ul{
+        height: 35vh;
+        overflow: auto;
+    }
+
     .add-playlist{
         display: inline-block;
         vertical-align: middle;
     }
+
+    .min{
+        width: 10px;
+    }
+
+    .med{
+        width: 20px;
+        background-color: grey;
+        border-radius: 50%;
+    }
+
+    .col-h-20 .subtitle{
+        padding: 10px;
+    }
+
+    hr{
+        height: 1px;
+        background-color: #ccc;
+        border: none;
+    }
+
+    
 
 
 
@@ -136,19 +168,47 @@ h2{
     }
 
     #main-content .subtitle{
+        padding: 10px;
+    }
+
+    .subtitle{
         color: grey;
         font-size: 10px;
-        padding: 10px 10px;
     }
 
     .circle{
         border-radius: 50%;
     }
 
-    #main-content img:hover{
-        opacity: 0.5;
-    }
     
+    
+    .col-100 .content{
+        font-size: 12px;
+    }
+
+    .col-100 .row{
+        max-width: 991px;
+        margin: 0 auto;
+
+    }
+
+    .album{
+        position: relative;
+    }
+
+    .overlay{
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        display: none;
+    }
+
+    .overlay .fa-play{
+        font-size: 40px;
+        border: 4px solid;
+    }
 
 
 
@@ -216,6 +276,46 @@ h2{
         margin: 0 10px;
     }
 
+    .range{
+        width: 100%;
+        height: 5px;
+        background-color: grey;
+        border-radius: 3px;
+        position: relative;
+        display: flex;
+    }
+
+    .progress{
+        width: 52%;
+        height: 5px;
+        background-color: white;
+        border-radius: 3px;
+        
+    }
+    .cursor{
+        display: none;
+        width: 10px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: green;
+        position: absolute;
+        left: 48%;
+        transform: translateY(-10%);
+    }
+
+    .progres-bar:hover , .range:hover .cursor {
+        display: flex;
+    }
+
+    .progres-bar:hover .progress , .range:hover .progress{
+        background-color: lime;
+    }
+
+    .progres-bar span{
+        font-size: 10px;
+    }
+    
+
     
     
 
@@ -258,6 +358,14 @@ h2{
 
 /* FONT MODELLING */
 
+li{
+    color: grey;
+}
+
+.fa-heart , .fa-folder{
+    color: grey;
+}
+
 .fc-white{
     color: #fff;
 }
@@ -270,9 +378,14 @@ h2{
     margin-top: 75px;
 }
 
+.fc-grey{
+    color: grey;
+    margin: 10px 0;
+}
+
 /* MEDIA QUERY */
 
-@media  screen and (min-width: 500px) {
+@media  screen and (min-width: 480px) {
     /* MAIN-CONTENT */
 
     header{
@@ -299,10 +412,14 @@ h2{
         text-align: start;
     }
 
+    #sidebar .container{
+        padding-left: 10px ;
+    }
+
     
 }
 
-@media  screen and (min-width: 761px) {
+@media  screen and (min-width: 768px) {
     /* MAIN-CONTENT */
 
     #main-content .col-25{
@@ -323,5 +440,38 @@ h2{
     
     
 }
+
+
+@media screen and (min-width: 1200px) {
+
+    #main-content .col-50{
+        width: calc(100% / 6 - 20px); 
+    }
+
+    #main-content .col-25{
+        width: calc(100% / 6);
+    }
+
+}
+
+
+
+/* hover */
+.col-100 .content:hover , li:hover , .fc-grey:hover{
+    color: white;
+}
+
+.fc-grey:hover .fa-plus{
+    background-color: white;
+}
+
+.fa-regular:hover{
+    color: white;
+}
+
+.album:hover .overlay{
+    display: block;
+}
+
 
 

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -16,7 +19,7 @@
                     <div class="col-h-80">
                         <div class="content">
                             <div class="logo ">
-                                <img class="ci-white va-middle" src="./img/favicon.ico" alt="">
+                                <img class="va-middle" src="./img/logo-small.svg" alt="">
                                 <span class="display va-middle">Spotify</span>
                             </div>
                             <div class="menu">
@@ -36,9 +39,12 @@
                                 </ul>
                             </div>
                             <div class="playlist display">
-                                <h2></h2>
-                                <i class="fas fa-plus add-playlist"></i>
-                                <div class="add-playlist">Crea Playlist</div>
+                                <h2>Playlist</h2>
+                                <div class="fc-grey">
+                                    <i class="fas fa-plus add-playlist"></i>
+                                    <div class="add-playlist">Crea Playlist</div>
+                                </div>
+                                
                                 <ul>
                                     <li>Nome Playlist</li>
                                     <li>Nome Playlist</li>
@@ -52,7 +58,18 @@
                         </div>
                     </div>
                     <div class="col-h-20">
-                        
+                        <div class="content ta-center">
+                            <div>
+                                <img class="min" src="./img/download.svg" alt="">
+                                <div class="subtitle display">Installa app</div>
+                            </div>
+                            <hr class="display">
+                            <div>
+                                <img class="va-middle med" src="./img/profile.svg" alt="">
+                                <span class="display va-middle">John doe</span>
+                            </div>
+
+                        </div>
                        
                     </div>
                 </div>
@@ -72,32 +89,32 @@
                         <div class="col-100">
                             <div class="row d-flex f-wrap jc-center">
                                 <div class="col-25">
-                                    <div class="content">
+                                    <div class="content fc-grey">
                                         IN EVIDENZA
                                     </div>
                                 </div>
                                 <div class="col-25">
-                                    <div class="content">
+                                    <div class="content fc-grey">
                                         PODCAST
                                     </div>
                                 </div>
                                 <div class="col-25">
-                                    <div class="content">
+                                    <div class="content fc-grey">
                                         CLASSIFICHE
                                     </div>
                                 </div>
                                 <div class="col-25">
-                                    <div class="content">
+                                    <div class="content fc-grey">
                                         GENERI E MOOD
                                     </div>
                                 </div>
                                 <div class="col-25">
-                                    <div class="content">
+                                    <div class="content fc-grey">
                                         NUOVE USICTE
                                     </div>
                                 </div>
                                 <div class="col-25">
-                                    <div class="content">
+                                    <div class="content fc-grey">
                                         SCOPRI
                                     </div>
                                 </div>
@@ -112,7 +129,7 @@
                                 <h4>Heavy Metal</h4>
                                 <div class="subtitle">Subtitle</div>
                                 <div class="overlay">
-    
+                                    <i></i>
                                 </div>
                             </div>
                         </div>
@@ -159,12 +176,15 @@
                         </div>
                         <div class="col-50">
                             <div class="content ta-center">
-                                <img src="./img/cure.jpeg" alt="">
+                                <div class="album">
+                                    <img src="./img/cure.jpeg" alt="">
+                                    <div class="overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                
                                 <h4>A cure for wellness</h4>
                                 <div class="subtitle">Subtitle</div>
-                                <div class="overlay">
-    
-                                </div>
                             </div>
                         </div>
                         <div class="col-50">
@@ -247,8 +267,8 @@
                         </div>
                         <div class="col-25 ta-end d-flex ">
                             <div class="content">
-                                <i class="fas fa-heart"></i>
-                                <i class="fas fa-folder"></i>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-folder"></i>
                             </div>
                         </div>
                     </div>
@@ -262,9 +282,12 @@
                             <i class="fas fa-forward-step"></i>
                             <i class="fas fa-arrow-rotate-right"></i>
                         </div>
-                        <div class="progres-bar d-flex jc-center" >
+                        <div class="progres-bar d-flex jc-center ai-center" >
                             <span>2.12</span>
-                            <input type="range">
+                            <div class="range">
+                                <div class="progress"></div>
+                                <div class="cursor"></div>
+                            </div>
                             <span>4.5</span>
                         </div>
                     </div>
@@ -275,7 +298,10 @@
                                 <i class="fas fa-list"></i>
                                 <i class="fas fa-desktop"></i>
                                 <i class="fas fa-volume-high"></i>
-                                <input type="range">
+                                <div class="range">
+                                    <div class="progress"></div>
+                                    <div class="cursor"></div>
+                                </div>
                             </div>
                        
                     </div>
